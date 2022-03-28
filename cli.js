@@ -271,7 +271,7 @@ async function speedTest() {
   logSpeedTestResult('100MB', testDown5);
 
   const testDown6 = await measureDownload(250001000, 1);
-  logSpeedTestResult('250MB', testDown5);
+  logSpeedTestResult('250MB', testDown6);
 
   const downloadTests = [
     ...testDown1,
@@ -290,7 +290,7 @@ async function speedTest() {
   const testUp3 = await measureUpload(1001000, 8);
   logSpeedTestResult('1MB', testUp3);
   const testUp4 = await measureUpload(10001000, 6);
-  logSpeedTestResult('10MB', testUp3);
+  logSpeedTestResult('10MB', testUp4);
   const uploadTests = [
     ...testUp1, 
     ...testUp2, 
