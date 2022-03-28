@@ -289,7 +289,7 @@ async function speedTest() {
   logSpeedTestResult('100kB', testUp2);
   const testUp3 = await measureUpload(1001000, 8);
   logSpeedTestResult('1MB', testUp3);
-  const testUp3 = await measureUpload(10001000, 6);
+  const testUp4 = await measureUpload(10001000, 6);
   logSpeedTestResult('10MB', testUp3);
   const uploadTests = [
     ...testUp1, 
