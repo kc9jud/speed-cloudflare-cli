@@ -3,7 +3,7 @@ COPY . /app
 WORKDIR /app
 RUN npm ci --production
 
-FROM gcr.io/distroless/nodejs:14
+FROM gcr.io/distroless/nodejs14-debian11
 COPY --from=build-env /app /app
 WORKDIR /app
 CMD ["cli.js"]
